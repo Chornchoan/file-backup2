@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "outDir":"dist" // pleace for manage file that we compiled 
+  },
+  "included": ["./src/**/*"], // include all files in src folder and sub-folders
+}
