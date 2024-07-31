@@ -1,0 +1,326 @@
+Microsoft Windows [Version 10.0.19045.3803]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\chorn.choan>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 34
+Server version: 10.4.28-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases
+    -> show databasses
+    -> show databases;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'show databasses
+show databases' at line 2
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| mywebsite_jn       |
+| performance_schema |
+| personal_db        |
+| phpmyadmin         |
+| pos_system         |
+| test               |
++--------------------+
+8 rows in set (0.001 sec)
+
+MariaDB [(none)]> create table students (
+    -> create table students
+    -> create database wp_b-DB
+    -> create database wp_b_db;
+ERROR 1046 (3D000): No database selected
+MariaDB [(none)]> create database wp_b_db
+    -> create databases wp_b_db;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'create databases wp_b_db' at line 2
+MariaDB [(none)]> create database wp_b_db;
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [(none)]> create database wp_b_db;
+ERROR 1007 (HY000): Can't create database 'wp_b_db'; database exists
+MariaDB [(none)]> create database wp_d_db;
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| mywebsite_jn       |
+| performance_schema |
+| personal_db        |
+| phpmyadmin         |
+| pos_system         |
+| test               |
+| wp_b_db            |
+| wp_d_db            |
++--------------------+
+10 rows in set (0.001 sec)
+
+MariaDB [(none)]> delete wp_b_db
+    -> show databases;
+ERROR 1046 (3D000): No database selected
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| mywebsite_jn       |
+| performance_schema |
+| personal_db        |
+| phpmyadmin         |
+| pos_system         |
+| test               |
+| wp_b_db            |
+| wp_d_db            |
++--------------------+
+10 rows in set (0.001 sec)
+
+MariaDB [(none)]> use wp_b_db;
+Database changed
+MariaDB [wp_b_db]> create table students;
+ERROR 1113 (42000): A table must have at least 1 column
+MariaDB [wp_b_db]> show table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+MariaDB [wp_b_db]> show table students;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'students' at line 1
+MariaDB [wp_b_db]> create table students;
+ERROR 1113 (42000): A table must have at least 1 column
+MariaDB [wp_b_db]> create table students (
+    -> id int,
+    -> name varchar(20),
+    -> age int
+    -> );
+Query OK, 0 rows affected (0.010 sec)
+
+MariaDB [wp_b_db]> desc students
+    -> desc students;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'desc students' at line 2
+MariaDB [wp_b_db]> desc tables;
+ERROR 1146 (42S02): Table 'wp_b_db.tables' doesn't exist
+MariaDB [wp_b_db]> desc students;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| id    | int(11)     | YES  |     | NULL    |       |
+| name  | varchar(20) | YES  |     | NULL    |       |
+| age   | int(11)     | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+3 rows in set (0.015 sec)
+
+MariaDB [wp_b_db]> show tables;
++-------------------+
+| Tables_in_wp_b_db |
++-------------------+
+| students          |
++-------------------+
+1 row in set (0.000 sec)
+
+MariaDB [wp_b_db]> alter tables students add province varchar(20);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'tables students add province varchar(20)' at line 1
+MariaDB [wp_b_db]> alter table students add province varchar(20);
+Query OK, 0 rows affected (0.006 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [wp_b_db]> desc students;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| id       | int(11)     | YES  |     | NULL    |       |
+| name     | varchar(20) | YES  |     | NULL    |       |
+| age      | int(11)     | YES  |     | NULL    |       |
+| province | varchar(20) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+4 rows in set (0.020 sec)
+
+MariaDB [wp_b_db]> alter table students add column gender(1) after students;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(1) after students' at line 1
+MariaDB [wp_b_db]> alter table students add column gender varchat(1) after students;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(1) after students' at line 1
+MariaDB [wp_b_db]> alter table students add column gender varchar(1) after students;
+ERROR 1054 (42S22): Unknown column 'students' in 'students'
+MariaDB [wp_b_db]> alter table students add column gender varchar(1) after name;
+Query OK, 0 rows affected (0.008 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [wp_b_db]> desc students;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| id       | int(11)     | YES  |     | NULL    |       |
+| name     | varchar(20) | YES  |     | NULL    |       |
+| gender   | varchar(1)  | YES  |     | NULL    |       |
+| age      | int(11)     | YES  |     | NULL    |       |
+| province | varchar(20) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+5 rows in set (0.016 sec)
+
+MariaDB [wp_b_db]> alter table students add email int
+    -> alter table students add email int;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'alter table students add email int' at line 2
+MariaDB [wp_b_db]> alter table students add email int;
+Query OK, 0 rows affected (0.006 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [wp_b_db]> desc students;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| id       | int(11)     | YES  |     | NULL    |       |
+| name     | varchar(20) | YES  |     | NULL    |       |
+| gender   | varchar(1)  | YES  |     | NULL    |       |
+| age      | int(11)     | YES  |     | NULL    |       |
+| province | varchar(20) | YES  |     | NULL    |       |
+| email    | int(11)     | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+6 rows in set (0.013 sec)
+
+MariaDB [wp_b_db]> alter table students modify column email varchar(100);
+Query OK, 0 rows affected (0.027 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [wp_b_db]> desc students;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| id       | int(11)      | YES  |     | NULL    |       |
+| name     | varchar(20)  | YES  |     | NULL    |       |
+| gender   | varchar(1)   | YES  |     | NULL    |       |
+| age      | int(11)      | YES  |     | NULL    |       |
+| province | varchar(20)  | YES  |     | NULL    |       |
+| email    | varchar(100) | YES  |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+6 rows in set (0.012 sec)
+
+MariaDB [wp_b_db]> alter table students change column province column class varchar(20);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'column class varchar(20)' at line 1
+MariaDB [wp_b_db]> alter table students change province class varchar(20);
+Query OK, 0 rows affected (0.006 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [wp_b_db]> desc students;
++--------+--------------+------+-----+---------+-------+
+| Field  | Type         | Null | Key | Default | Extra |
++--------+--------------+------+-----+---------+-------+
+| id     | int(11)      | YES  |     | NULL    |       |
+| name   | varchar(20)  | YES  |     | NULL    |       |
+| gender | varchar(1)   | YES  |     | NULL    |       |
+| age    | int(11)      | YES  |     | NULL    |       |
+| class  | varchar(20)  | YES  |     | NULL    |       |
+| email  | varchar(100) | YES  |     | NULL    |       |
++--------+--------------+------+-----+---------+-------+
+6 rows in set (0.012 sec)
+
+MariaDB [wp_b_db]> alter table students drop column province;
+ERROR 1091 (42000): Can't DROP COLUMN `province`; check that it exists
+MariaDB [wp_b_db]> alter table students drop column class;
+Query OK, 0 rows affected (0.006 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [wp_b_db]> alter table students drop column class email age;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'email age' at line 1
+MariaDB [wp_b_db]> alter table students drop column email;
+Query OK, 0 rows affected (0.007 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [wp_b_db]> desc students;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| id     | int(11)     | YES  |     | NULL    |       |
+| name   | varchar(20) | YES  |     | NULL    |       |
+| gender | varchar(1)  | YES  |     | NULL    |       |
+| age    | int(11)     | YES  |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+4 rows in set (0.013 sec)
+
+MariaDB [wp_b_db]> insert into students(id, name, gender, age) value(
+    -> 1, "lola", "F" 18);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '18)' at line 2
+MariaDB [wp_b_db]> 1, "lola", "F" 18);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, "lola", "F" 18)' at line 1
+MariaDB [wp_b_db]> insert into students(id, name, gender, age) value(
+    -> 1, "lola", "f", 18);
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [wp_b_db]> select * from students;
++------+------+--------+------+
+| id   | name | gender | age  |
++------+------+--------+------+
+|    1 | lola | f      |   18 |
++------+------+--------+------+
+1 row in set (0.000 sec)
+
+MariaDB [wp_b_db]> insert into students(id, name, gender, age) value(
+    -> 2, "susi", "f", 30);
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [wp_b_db]> select * from students;
++------+------+--------+------+
+| id   | name | gender | age  |
++------+------+--------+------+
+|    1 | lola | f      |   18 |
+|    2 | susi | f      |   30 |
++------+------+--------+------+
+2 rows in set (0.000 sec)
+
+MariaDB [wp_b_db]> update students set age = 25 where name = lola;
+ERROR 1054 (42S22): Unknown column 'lola' in 'where clause'
+MariaDB [wp_b_db]> update students set age = 25 where id = 1;
+Query OK, 1 row affected (0.002 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [wp_b_db]> select * from students;
++------+------+--------+------+
+| id   | name | gender | age  |
++------+------+--------+------+
+|    1 | lola | f      |   25 |
+|    2 | susi | f      |   30 |
++------+------+--------+------+
+2 rows in set (0.000 sec)
+
+MariaDB [wp_b_db]> delete from students where id = 2;
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [wp_b_db]> select * from students;
++------+------+--------+------+
+| id   | name | gender | age  |
++------+------+--------+------+
+|    1 | lola | f      |   25 |
++------+------+--------+------+
+1 row in set (0.000 sec)
+
+MariaDB [wp_b_db]> update students set name = "yaeyi" where id = 2;
+Query OK, 0 rows affected (0.000 sec)
+Rows matched: 0  Changed: 0  Warnings: 0
+
+MariaDB [wp_b_db]> select * from students;
++------+------+--------+------+
+| id   | name | gender | age  |
++------+------+--------+------+
+|    1 | lola | f      |   25 |
++------+------+--------+------+
+1 row in set (0.000 sec)
+
+MariaDB [wp_b_db]> inserte students set name = "yaeyi" where id = 2;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'inserte students set name = "yaeyi" where id = 2' at line 1
+MariaDB [wp_b_db]> update students set name = "yaeyi" where id = 1;
+Query OK, 1 row affected (0.002 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [wp_b_db]> select * from students;
++------+-------+--------+------+
+| id   | name  | gender | age  |
++------+-------+--------+------+
+|    1 | yaeyi | f      |   25 |
++------+-------+--------+------+
+1 row in set (0.000 sec)
+
+MariaDB [wp_b_db]>

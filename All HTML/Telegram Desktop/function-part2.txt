@@ -1,0 +1,59 @@
+-----------------------------Part1-----------------------------
+Exercise1
+Create the fucntion multiply number1 and number2
+example:multiply(2,3) it will return 6
+
+exercise2
+Create the function name productFromTo 
+-startNumber: allow user input
+-endNumber: allow user input
+----xample----
+start number:2
+end number:4
+This result is 24 (becuase that 2x3x4 = 24)
+Note:You need to apply the previously of function multiply()
+
+-----------------------------Part2-----------------------------
+Exercise1 
+Create the function allow the user enter word and character to remove
+-function: removeCharacter(word,char)
+-param: word and char
+----xample----
+Enter a word:abcbdb
+Enter charater to remove:b
+Result:acd
+
+Exercise2 
+Note:You need to use or apply the function removeCharacter()
+----xample----
+Enter a word:abcbdb
+Enter charater to remove:b
+Result:acd
+Do you want to continue (Y/N)?:Y
+Enter a word:a-b-c-d
+Enter charater to remove:-
+Result:abcd
+Do you want to continue (Y/N)?:N
+
+-----------------------------Part3-----------------------------
+Exercise1
+Create the function allow the user enter word and character to count
+-function: countCharacter(word,char)
+-param: word and char
+----xample----
+Enter a word:abcbdb
+Enter charater to count:b
+The character b occurs 3 times in the word.
+
+Exercise2
+Note:You need to use or apply the function removeCharacter()
+----xample----
+Enter a word:abcbdb
+Enter charater to count:b
+The character b occurs 3 times in the word.
+Do you want to continue (Y/N)?:Y 
+Enter a word:a-b-c-d-e
+Enter charater to count:-
+The character b occurs 4 times in the word.
+Do you want to continue (Y/N)?:N
+

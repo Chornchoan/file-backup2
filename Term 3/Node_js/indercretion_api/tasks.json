@@ -1,0 +1,24 @@
+[
+    {
+        "id":1,
+        "name": "kaka",
+        "age" : 25,
+        "gender":"male",
+        "email":"kaka@gmail.com"
+    },
+    {
+        "id":2,
+        "name": "kaka",
+        "age" : 25,
+        "gender":"male",
+        "email":"kaka@gmail.com"
+    },
+    {
+        "id":3,
+        "name": "kaka",
+        "age" : 25,
+        "gender":"male",
+        "email":"kaka@gmail.com"
+    }
+    
+]

@@ -1,0 +1,9 @@
+ul {
+  display: flex;
+}
+ul .active {
+  background: rgb(156, 85, 85);
+}
+ul .ul li {
+  padding: 15px;
+}/*# sourceMappingURL=aboutmin.css.map */

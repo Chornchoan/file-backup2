@@ -1,0 +1,687 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    /* overflow-x: hidden; */
+}
+body {
+    background: #cea7;
+    display: grid;
+    grid-template-rows: 70px 550px 4748px 250px;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "footer";
+    
+}
+nav {
+    position: sticky;
+    top: 0;
+    background: #d97f11;
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-areas:
+        "navleft navright";
+    z-index: 3;
+}
+.navleft {
+    grid-area: navleft;
+}
+.navleft img {
+    width: 150px;
+    padding: 10px;
+
+}
+.navright {
+    grid-area: navright;
+    display: grid;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.navright ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+header {
+    position: relative;
+    grid-area: header;
+    background-image: url(https://media.licdn.com/dms/image/C4E1BAQEL9_UKiZEjcg/company-background_10000/0/1557127841108?e=1693400400&v=beta&t=GFJmxurfuGFkaZchAnioI6zRYlOJtBJIoQ6wUmCTnFo);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(125deg, rgba(228, 241, 53, 0.167), rgba(27, 35, 26, 0.578));
+}
+.text {
+    display: grid;
+    margin-top: 280px;  
+    z-index: 1;
+    color: white;
+}
+.text p {
+    margin-bottom: 140px;
+}
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows:40px 80px   100px ;
+}
+.vlu h2 {
+    padding: 10px;
+    text-decoration: underline;
+
+}
+.pnvalue {
+    grid-area: pnvalue;
+    height: 40vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.one {
+    height: 40vh;
+    background: #b3d6ec;
+    border: 1px solid black;
+    background: linear-gradient(125deg, rgba(214, 61, 216, 0.443), rgba(24, 222, 43, 0.301));
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    gap: 20px;
+
+}
+.one img {
+    width: 80px;
+}
+.one:hover {
+    background: #2985d0;
+}
+.cantten {
+    margin-top: 30px;
+}
+.manue {
+    height: 40vh;
+    position: relative;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.ctt {
+    padding: 10px;
+    text-decoration: underline;
+}
+.pictur {
+    height: 40vh;
+    background: #b3d6ec;
+    border: 1px solid black;
+    background: linear-gradient(125deg, rgba(56, 67, 55, 0.397), rgba(212, 230, 16, 0.301));
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    gap: 20px;
+}
+.pictur img {
+    width: 200px;
+    padding: 10px;
+    border-radius: 100px;
+}
+.picturt img{
+    width: 200px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 100px;
+}
+.picturt{
+    height: 40vh;
+    background: #b3d6ec;
+    border: 1px solid black;
+    background: linear-gradient(125deg, rgba(56, 67, 55, 0.397), rgba(212, 230, 16, 0.301));
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    gap: 20px;
+}
+.sl {
+    height: 30vh;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+table {
+    display: grid;
+    border-collapse: collapse;
+    justify-content: center;
+}
+thead tr th {
+    width: 150px;
+    height: 50px;
+    background: #1759dc;
+    border: 1px solid #000;
+    color: rgb(249, 249, 249);
+}
+tbody tr td {
+    width: 150px;
+    height: 30px;
+    border: 1px solid #000;
+}
+.bgsport {
+    position: relative;
+    background-image: url(https://www.kreedon.com/wp-content/uploads/2019/04/sports-jobs.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    display: grid;
+    color: white;
+    margin-top: 20px;
+    padding: 10px
+}
+.bgsport h2 {
+    margin-top: 120px;
+}
+.bgsport p {
+    margin-bottom: 200px;
+}
+.sp{
+    padding: 10px;
+    text-decoration: underline;
+    text-align: center;
+}
+.sporttype{
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+.sport {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);   
+}
+.sport img {
+    width: 300px;
+}
+.football,.ruby,.basketball,.bicycle,.badminton,.volleyball{
+    background: #beacac;
+     height: 60vh;
+     margin: 20px;
+}
+.football:hover,
+.ruby:hover,
+.basketball:hover,
+.bicycle:hover,
+.badminton:hover,
+.volleyball:hover{
+    background: #42e4ea;
+}
+.football img,.bicycle img,.volleyball img,.badminton img,.basketball img,.ruby img{
+    width: 380px;
+    height: 35vh;
+}
+.arobicSection{
+    display: grid;
+    text-align: center;
+    grid-template-columns:repeat(2,6fr) ;
+}
+.arobic {
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+.arb{
+    background: #3edff1;
+    margin: 10px;
+}
+.arb img{
+    width: 600px;
+}
+.contact{
+    background-image: url(https://www.passerellesnumeriques.org/wp-content/uploads/2016/03/DSC_2053.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;  
+    grid-template-columns:repeat(2,1fr);
+    margin-top: 10px;
+    padding: 10px;
+}
+.jone{
+    color: white;
+    margin-top: 70px;
+}
+.grupinput{
+     background: #17c3dacf;
+     height: 80vh;
+     width: 80%;
+     display: grid;
+     align-items: center;
+     border-radius: 10px;
+     margin-left: 50px;
+
+}
+.username input{    
+    width: 42.40%;
+    margin-left: 8px;
+    padding: 10px; 
+}
+.email  input,.userpassword input{
+  width: 92%;
+ margin-left: 8px;
+ padding: 10px;
+}
+.submit button{
+    width: 97%;
+    margin-left: 8px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 100px;
+    border: none;
+}
+.submit :hover{
+    background: #25eac3;
+}
+.message input{
+    width: 92%;
+    height: 20vh;
+    margin-left: 8px;
+    padding: 10px;
+}
+footer {
+    grid-area: footer;
+    background: #11ccd9f3;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 20px;
+}
+.logopn img{
+    grid-column: 1/3;
+}
+.log{
+    margin-bottom: 10px;
+}
+.valuePN h3,.Oursocialmaxresdia h3,.OurMajor h3,.ourDepartment h3{
+    color: #0319e0;
+    margin-bottom: 10px;
+}
+.valuePN,.OurMajor,.ourDepartment{
+    margin-left: 60px;
+}
+.icons1 span{
+    margin-left: 10px;
+}
+.icons1 img{
+    width: 25px;
+}
+a{
+    text-decoration: none;
+}
+@media(max-width:1024px){
+    body{
+        width: 100%;
+    }
+    .sp{
+        margin-top: 40px;
+    }
+    iframe{
+        height: 230vh;
+    }
+    nav {
+        position: sticky;
+        top: 0;
+        grid-area: nav;
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-areas:
+            "navleft navright";
+        z-index: 2;
+    }
+   
+} 
+@media(max-width: 724px){
+    iframe{
+        height: 188vh;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ <nav>
+        <div class="navleft">
+            <img src="img/logo-en.png" alt="">
+        </div>
+        <div class="navright">
+            <ul>
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#pnvalue">PN VALUE</a></li>
+                <li><a href="#cantten">CANTTEN</a></li>
+                <li><a href="#sp">SPORT</a></li>
+                <li><a href="#arobicSection">AEROBIC</a></li>
+                <li><a href="#contact">CONTACN US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <a id="header"></a>
+        <div class="blur"></div>
+        <div class="text">
+            <h3>WELL COME TO PNC IN CAMBODIA</h3>
+            <p>Passerelles numériques Cambodia was the first project to be launched in 2005, in Phnom Penh.
+                PNC offers two IT training programs in System and Network Administration (SNA) and Web Programming
+                (WEP),
+                based on a holistic educative approach including technical and soft skills, and a personal development
+                program.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <a id="pnvalue"></a>
+        <div class="vlu">
+            <h2>Value section</h2>
+        </div>
+        <div class="pnvalue">
+            <div class="one">
+                <img src="img/trusted-icon-3.jpg" alt="">
+                <h4>Trust</h4>
+                <p>assured reliance on the character, ability, strength, or truth of someone or something. </p>
+            </div>
+            <div class="one">
+                <img src="img/respon.png" alt="">
+                <h4>Responsibility</h4>
+                <p>Responsibility refers to the duty of having authority or control over something or someone.</p>
+            </div>
+            <div class="one">
+                <img src="img/solida.png" alt="">
+                <h4>Solidarity</h4>
+                <p>show support for each other or for another group, especially in political or international affairs
+                </p>
+            </div>
+            <div class="one">
+                <img src="img/respect-icon-3.jpg" alt="">
+                <h4>Respect</h4>
+                <p>you accept somebody for who they are, even when they're different from you or you don't agree with
+                    them. </p>
+            </div>
+            <div class="one">
+                <img src="img/Deman.png" alt="">
+                <h4>Demand</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quasi?</p>
+            </div>
+        </div>
+        <a id="cantten"></a>
+        <div class="cantten">
+            <div class="ctt">
+                <h2>Canteen section</h2>
+            </div>
+            <div class="manue">
+                <div class="pictur">
+                    <img src="img/maxresdefault (1).jpg" alt="">
+                    <h2>សម្លរម្ជូរដើមចេក</h2>
+                </div>
+                <div class="pictur">
+                    <img src="img/maxresdefault (2).jpg" alt="">
+                    <h2>ឆាល្ពៅ</h2>
+                </div>
+                <div class="pictur">
+                    <img src="img/maxresdefault.jpg" alt="">
+                    <h2>ឆាខ្ញី</h2>
+                </div>
+                <div class="picturt">
+                    <img src="img/sddefault.jpg" alt="">
+                    <h2>សម្លរករកូរ</h2>
+                </div>
+            </div>
+            <div class="sl">
+                <h2>Schedule</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time/day</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Morning</td>
+                            <td>បាយស្រូបសាច់ចៀន</td>
+                            <td>បាយស្រូបខរពងទា</td>
+                            <td>បាយស្រូបឆាស្លឺកកាឆាយ</td>
+                            <td>បាយស្រូបឆាខ្ញី</td>
+                            <td>បាយស្រូបឆាខ្ញី</td>
+
+                        </tr>
+                        <tr>
+                            <td>Midday</td>
+                            <td>សម្លរករកូរ</td>
+                            <td>សម្លរម្ជូរត្រប់</td>
+                            <td>សម្លរប្រលឹត</td>
+                            <td>សម្លរម្ជូរដើមចេក</td>
+                            <td>ស្ងោរតុមយាំ</td>
+                        </tr>
+                        <tr>
+                            <td>Evening</td>
+                            <td>​សម្លរម្ជូរប្រលឹត</td>
+                            <td>ប្រហុកខ្ទិះ</td>
+                            <td>ស្ងោរប្រហិតត្រី</td>
+                            <td>ត្រកួនឆាសៀង</td>
+                            <td>ឆាល្ពៅ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="sportgroup">
+            <a id="sp"></a>
+            <div class="sp">
+                <h2>Sports section</h2>
+            </div>
+            <div class="bgsport">
+                <h2>PN sport</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aperiam repudiandae tenetur
+                    recusandae,
+                    amet natus magni dolorum odit inventore possimus ullam minima pariatur distinctio, neque voluptatem
+                    eum?
+                    Consectetur perferendis, obcaecati hic dolor architecto voluptatibus ullam cumque at. Aliquid, nihil
+                    soluta!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum nobis dicta fuga, quaerat aperiam
+                    beatae incidunt sapiente, ipsa placeat sunt nisi reiciendis maiores ex quae? Aspernatur nobis veniam
+                    molestias assumenda.
+                </p>
+            </div>
+            <div class="sporttype">
+                <h2>Sport Type</h2>
+            </div>
+            <div class="sport">
+                <div class="football">
+                    <img src="img/football.jpg" alt="">
+                    <h3>Football</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus atque illum vero accusantium
+                        commodi illo maiores dolorum odit suscipit harum.</p>
+                </div>
+                <div class="ruby">
+                    <img src="img/ruby.webp" alt="">
+                    <h3>Ruby</h3>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore consequatur sequi ducimus,
+                    quibusdam
+                    sapiente porro ex explicabo consequuntur numquam! Quia.
+                </div>
+                <div class="basketball">
+                    <img src="img/basketball-statistiken-670.webp" alt="">
+                    <h3>Basketball</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ullam eius, est temporibus
+                        numquam
+                        obcaecati non sit ad nisi ducimus?</p>
+                </div>
+                <div class="bicycle">
+                    <img src="img/bicycle.webp" alt="">
+                    <h3>Bicycle</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus error eligendi recusandae, ea
+                        nobis
+                        inventore sequi ipsum voluptatem exercitationem mollitia.</p>
+                </div>
+                <div class="badminton">
+                    <img src="img/badmiton.jpg" alt="">
+                    <h3>Badminton</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo autem, esse facere earum
+                        voluptatibus
+                        natus quisquam voluptate assumenda corrupti nihil.</p>
+                </div>
+                <div class="volleyball">
+                    <img src="img/photo_2023-08-23_18-24-04.jpg" alt="">
+                    <h3>volleyball</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reiciendis eos placeat eveniet
+                        blanditiis
+                        ad earum reprehenderit a unde ut?</p>
+                </div>
+            </div>
+        </div>
+        <div class="arobicgroup">
+            <div class="arobic">
+                <h2>Aerobic section</h2>
+            </div>
+            <a id="arobicSection"></a>
+            <div class="arobicSection">
+                <div class="arb">
+                    <img src="img/photo5_2023-08-27_14-52-20.jpg" alt="">
+                    <h3>Dance</h3>
+                    <p></p>
+                </div>
+                <div class="arb">
+                    <img src="img/photo_2023-08-23_18-24-02.jpg" alt="">
+                    <h3>playgame</h3>
+                    <p></p>
+                </div>
+                <div class="arb">
+                    <img src="img/photopnc2.jpg" alt="">
+                    <h3>Dance</h3>
+                    <p></p>
+                </div>
+                <div class="arb">
+                    <img src="img/photo_2023-08-27_14-51-31.jpg" alt="">
+                    <h3>Dance</h3>
+                    <p></p>
+                </div>
+                <div class="arb">
+                    <img src="img/yoga.pnj.webp" alt="">
+                    <h3>Yoga</h3>
+                    <p></p>
+                </div>
+                <div class="arb">
+                    <img src="img/photopnc3.jpg" alt="">
+                    <h3>sing songs</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="contacgroup">
+            <a id="contact"></a>
+            <div class="contact">
+                <div class="jone">
+                    <h1> Join Us</h1>
+                    <span>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat cumque dolorem reiciendis?
+                        Doloremque quis facere dolorum nesciunt repellat tempore non iste velit ex quibusdam,
+                        tenetur enim architecto blanditiis dolor id eaque molestias error. Et quis dignissimos ab
+                        eligendi
+                        voluptatum, ducimus, saepe optio minus aut eius aspernatur inventore. Vero, rem atque?
+                    </span>
+                </div>
+                <div class="grupinput">
+                    <div class="username">
+                        <input type="text" placeholder="First name">
+                        <input type="text" placeholder="Last name">
+                    </div>
+                    <div class="email">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="userpassword">
+                        <input type="text" placeholder="Password">
+                    </div>
+                    <div class="message">
+                        <input type="text" placeholder="Message">
+                    </div>
+                    <div class="submit">
+                        <button>submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mep">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.0139083277763!2d104.8805086750534!3d11.550859788648959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951add5e2cd81%3A0x171e0b69c7c6f7ba!2sPasserelles%20num%C3%A9riques%20Cambodia%20(PNC)!5e0!3m2!1sen!2skh!4v1693268388634!5m2!1sen!2skh"
+                    width="1400" height="480" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="logopn">
+            <div class="log">
+                <img src="img/logo-en.png" alt="" width="50%">
+            </div>
+            <span>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id error animi,
+                aliquam, itaque nihil neque vel omnis soluta quaerat ab rem? Consequatur,
+                unde accusantium voluptatem ex nostrum labore aliquid esse.
+            </span>
+        </div>
+        <div class="valuePN">
+            <h3>PN Value</h3>
+            <li>Trust</li>
+            <li>Solidarity</li>
+            <li>Respect</li>
+            <li>Demand</li>
+            <li>Responsibility</li>
+        </div>
+        <div class="Oursocialmaxresdia">
+            <h3>Our social maxresdia</h3>
+            <div class="icons1">
+                <img src="img/Facebook_f_logo_(2019).svg.webp" alt="">
+                <span>Facboox</span>
+            </div>
+            <div class="icons1">
+                <img src="img/LinkedIn_icon_circle.svg.png" alt="">
+                <span>Linkedin</span>
+            </div>
+            <div class="icons1">
+                <img src="img/logo-twitter-circle-png-transparent-image-1.png" alt="">
+                <span>Twitter</span>
+            </div>
+
+        </div>
+        <div class="OurMajor ">
+            <h3>Our major</h3>
+            <li>Programming</li>
+            <li>Networking</li>
+        </div>
+        <div class="ourDepartment">
+            <h3>our Department</h3>
+            <div class="kon">
+                <li>IT</li>
+                <li>HR</li>
+                <li>ERO</li>
+                <li>Social Affair</li>
+                <li>Selection</li>
+                <li>English/PL</li>
+            </div>
+        </div>
+
+    </footer>

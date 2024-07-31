@@ -1,0 +1,135 @@
+from tkinter import*
+root= Tk()
+root.title ('bg')
+root.geometry("1024x500")
+
+# Define image
+bg = PhotoImage(file="jungle.png")
+
+# Creat lambda
+my_label = Label(root,image=bg)
+my_label.place(x=0, y=0, relwidth=1,relheight=1)
+
+# Add something to the of our image
+my_text=Label(root,text="Welcome! to play game",font=("Helvetica",50),fg="white")
+my_text.pack(pady=50)
+
+#Creat frame
+my_frame=Frame(root)
+my_frame.pack(pady=20)
+
+# add some buttone
+my_button1=Button(my_frame,text="Exit")
+my_button1.grid(row=0, column=0, padx=20)
+
+my_button1=Button(my_frame,text="start")
+my_button1.grid(row=0, column=1, padx=20)
+
+my_button1=Button(my_frame,text="Reset")
+my_button1.grid(row=0, column=2, padx=20)
+
+
+root.mainloop()\
+
+///////////////////////////////////////////////////////////\
+from tkinter import *
+# from PIL import Image, ImageTk
+# import time
+
+# varaible----
+# WIDTH = 1400
+# HEIGHT = 700
+
+# xMove = 10
+window = Tk()
+window.geometry("1400x700")
+
+# Creat frame
+my_frame=Frame(window)
+my_frame.pack(pady=20)
+# Define imager 
+bg = PhotoImage(file="bg1.jpg")
+
+#creat label 
+my_label=Label(window, image=bg)
+my_label.place(x=0, y=0, relheight=1, relwidth=1)
+#Initiallizing the score varibable
+# global score
+# score =0
+
+#creat the score keeper label
+# scoreLabel = Label(window, text="Your score:"+ str(score), bg = "powder blue")
+# scoreLabel.place(x=100, y=10)
+
+window.mainloop()
+
+////////////////////////////////////////////////////////////////////////////
+
+wall_file =Image.open("wall.png")
+wall_size =wall_file.resize((200,50))
+wall=ImageTk.PhotoImage(wall_size)
+# ------------- Game --------------------------
+
+# player = canvas.create_image(100, 150,  fill="red", outline="red")
+canvas.create_image(100, 400, image=wall, tags="PLATFORM")
+canvas.create_image(200, 250, image=wall, tags="PLATFORM")
+canvas.create_image(600, 500, image=wall, tags="PLATFORM")
+canvas.create_image(1000, 300,  image=wall, tags="PLATFORM")
+canvas.create_image(800, 400,  image=wall, tags="PLATFORM")
+canvas.create_image(400, 400,  image=wall, tags="PLATFORM")
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\
+# shape
+shape_id = canvas.create_oval(150, 100, 200, 150, fill="black")
+
+
+# Image 
+image_one = Image.open("Hero.png")
+
+img_size = image_one.resize((150,100))
+
+image = ImageTk.PhotoImage(img_size)
+
+boy_id = canvas.create_image(50, 50, image=image)
+
+
+def change_color(shape):
+    touch=canvas.find_overlapping(shape[0], shape[1], shape[2], shape[3])
+    print(touch)
+    if len(touch)>1:
+        if touch[1]==boy_id:
+            canvas.itemconfigure(shape_id, fill="blue")
+            canvas.create_text(250, 350, text="Game Over", font=("bold", 20), fill="red")
+            canvas.itemconfig(shape_id, state = 'hidden')
+        elif touch[1]!=boy_id:
+            canvas.itemconfigure(shape_id)
+def moveLeft(event):
+    change_color(canvas.coords(shape_id))
+    x = -10
+    y = 0
+    canvas.move(boy_id, x, y)
+    		
+def moveRight(event):
+    change_color(canvas.coords(shape_id))
+    x = 10
+    y = 0
+    canvas.move(boy_id, x, y)
+
+def moveUp(event):
+    change_color(canvas.coords(shape_id))
+    x = 0
+    y = -10
+    canvas.move(boy_id, x, y)
+
+def moveDown(event):
+    change_color(canvas.coords(shape_id))
+    x = 0
+    y = 10
+    canvas.move(boy_id, x, y)
+
+window.bind("<Left>", moveLeft)
+window.bind("<Right>", moveRight)
+window.bind("<Up>", moveUp)
+window.bind("<Down>", moveDown)
+
+window.mainloop()

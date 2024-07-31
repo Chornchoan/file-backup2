@@ -1,0 +1,70 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  border-bottom: 2px solid orange;
+}
+nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  background: orange;
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 25pd;
+  width: 30%;
+  height: 20vh;
+  color: white;
+  background: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.main-container {
+  display: flex;
+  height: 90vh;
+}
+.main-container aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background: black;
+  color: white;
+  font-weight: bold;
+  font-size: 25pd;
+}
+.main-container main {
+  flex: 4;
+}/*# sourceMappingURL=homemin.css.map */

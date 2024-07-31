@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background: #000;
+    height: 10vh;
+    display: flex;align-items: center;
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+}
+body>div{
+    color: white;
+    font-size: 30px;
+    display: flex;justify-content: center;align-items: center;
+}
+.home{
+    height: 20vh;
+    background: teal;
+}
+.about{
+    height: 30vh;
+    background: pink;
+}
+.contact{
+    height: 100vh;
+    background: purple;
+}
+.card{
+    height: 10vh;
+    width: 70%;
+    background: #000;
+}

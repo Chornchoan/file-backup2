@@ -1,0 +1,18 @@
+body {
+  background-color: #eee;
+}
+
+.container {
+  font-size: 16px;
+}
+
+.content {
+  background-color: #eee;
+  font-size: 16px;
+}
+
+#header-box {
+  padding: 10px;
+  margin: 0;
+  background-color: #eee;
+}/*# sourceMappingURL=main.css.map */

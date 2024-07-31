@@ -1,0 +1,81 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  border-bottom: 2px solid orange;
+}
+nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  background: orange;
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 25pd;
+  width: 30%;
+  height: 20vh;
+  color: white;
+  background: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.company-background,
+.company-mission,
+.main-bottom {
+  margin: 10px;
+}
+.company-background h1,
+.company-mission h1,
+.main-bottom h1 {
+  margin: 10px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+}
+.company-background .services,
+.company-mission .services,
+.main-bottom .services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=about-usmin.css.map */

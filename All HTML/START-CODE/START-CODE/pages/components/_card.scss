@@ -1,0 +1,18 @@
+@import "./group-mixin";
+.card {
+  @include centered;
+  @include startdard-text-content;
+  width: 30%;
+  height: 20vh;
+  color: white;
+  background: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+}

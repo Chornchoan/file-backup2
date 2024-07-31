@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    
+}
+form{
+    width: 50%;
+    height: 50vh;
+    background:darkorange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+   
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    gap: 30px;
+}
+.name{
+    display: flex;
+    gap: 10px;
+}
+.club{
+    display: flex;
+    margin-left: -205px;
+    gap: 10px;
+}
+.club select{
+    width: 100%;
+}
+
+/* .time{
+    display: flex;
+
+
+} */

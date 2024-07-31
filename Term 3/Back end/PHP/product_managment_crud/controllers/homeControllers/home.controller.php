@@ -1,0 +1,1 @@
+<?php require("view/homeView/home.view.php");?>

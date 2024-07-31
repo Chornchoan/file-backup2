@@ -1,0 +1,17 @@
+@import "main";
+@import "./components/card";
+.main-container{
+    display: flex;
+    height: 90vh;
+
+    aside{
+        @include centered;
+        flex: 1;
+        background: $sub-color2;
+        @include startdard-text-content;
+
+    }
+    main{
+        flex: 4;
+    }
+}

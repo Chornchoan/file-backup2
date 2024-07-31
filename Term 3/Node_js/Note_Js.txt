@@ -1,0 +1,19 @@
+before we buil api we need to think:
+1.end-point
+ex:{{url}}/task
+2.method
+ex:post
+3.request
+ex:{
+    "title":"Larave and node js",
+    "completed":false
+}
+4.respond
+{
+    "success": true,
+    "data": {
+        "id": 5,
+        "title": "Larave and node js",
+        "completed": false
+    }
+}

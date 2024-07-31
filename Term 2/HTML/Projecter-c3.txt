@@ -1,0 +1,294 @@
+    <nav>
+        <div class="logo">
+            <img src="images/logo/photo_2023-09-26_18-51-39-removebg-preview (1).png" alt="">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#sport">Sport</a></li>
+            <li><a href="#gym">Gym</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div id="home">
+        <div class="homepag">
+            <h2>welcome to</h2><br>
+            <h1>moon sport club</h1><br>
+            <p> In our club has many type of sport materials in our club that you can choose the sport you love to
+                perform.... </p>
+        </div>
+    </div>
+    <div id="about">
+        <h1><b>AOUBT</b></h1>
+        <div class="abouttop">
+            <div class="abouttopleft">
+                <p><b>Moon club </b>is Recreational Sports promotes physical fitness, healthy habits, and balanced
+                    behaviors
+                    through an array of recreation facilities, programs, services, special events, and student
+                    employment opportunities. Programs offered include Intramural Sports, Fitness/Wellness, Outdoor
+                    Recreation, Sport Clubs, Instructional, and Informal Recreation.</p>
+            </div>
+    
+            <div class="abouttopright">
+                    <h2>TURN ON THE HEAT ON YOUR GOLD!!</h2>
+                    <button>JOIN THE CLUB</button>
+            </div>
+        </div>
+        <div class="mis-vis">
+            <h1>MISSIN & VISION</h1><br>
+            <div class="our-mis-vis">
+                <div class="mission">
+                    <h2>Our Mission</h2>
+                    <p>
+                        Our mission is to advance the well-being of Longhorns by providing education through recreation.
+                    </p><br>
+                </div>
+                <div class="vision">
+                    <h2>Our Vision</h2>
+                    <P>
+                        Our vision is to transform lives. make yoursefl so stronger than ordinary people.
+                    </P>
+                </div>
+            </div>
+        </div>
+    <div id="sport">
+        <div class="sport-header">
+            <h1>SPORTS</h1>
+            <img src="images/sports/sport-requirement.jpg" width="100%">
+            <h1>Type of sport</h1>
+            <p>There are many sports in our club</p>
+        </div>
+        <div class="sport-content">
+            <div class="card">
+                <img src="images/sports/boxing-female.jpg" width="300px" height="300px" alt="">
+                <div class="card-content">
+                    <h2>BOXING</h2>
+                    <div class="card-content"></div>
+                    <p>
+                        Boxing is a combat sport and a martial art in which two people, usually wearing protective.
+                    </p>
+                    <a href="#" class="button" id="boxing">
+                        Find out more
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+            <div class="card">
+                <img src="images/sports/archery.jpg" width="300px" height="300px" alt="">
+                <div class="card-content">
+                    <h2>ARCHERY</h2>
+                    <p>
+                        Archery is the sport, practice, or skill of using a bow to shoot arrows. The word comes from the
+                        Latin arcus, meaning bow. Historically, archery has been used for hunting and combat.
+                    </p>
+                    <a href="#" class="button">
+                        Find out more
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/sports/table-tennis.jpg" width="300px" height="300px" alt="">
+                <div class="card-content">
+                    <h2>TABLE TENNIS</h2>
+                    <p>
+                        Table tennis is a racket sport derived from tennis but distinguished by its playing surface
+                        being atop a stationary table, rather than the court on which players stand.
+                    </p>
+                    <a href="#" class="button">
+                        Find out more
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/sports/skateboarding.jpg" width="300px" height="300px" alt="">
+                <div class="card-content">
+                    <h2>skateboarding</h2>
+                    <p>
+                        Skateboarding is an action sport that involves riding and performing tricks using a skateboard,
+                        as well as a recreational activity, an art form, an entertainment industry job, and a method of
+                        transportation.
+                    </p>
+                    <a href="#" class="button">
+                        Find out more
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/sports/soccer.jpg" width="300px" height="300px" alt="">
+                <div class="card-content">
+                    <h2>soccer</h2>
+                    <p>
+                        Football is a family of team sports that involve, to varying degrees, kicking a ball to score a
+                        goal.
+                    </p>
+                    <a href="#" class="button">
+                        Find out more
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/sports/baseball.jpg" width="300px" height="300px" alt="">
+                <div class="card-content">
+                    <h2>baseball</h2>
+                    <p>
+                        A baseball game is played between two teams, each usually composed of nine players, that take
+                        turns playing offense (batting and baserunning) and defense (pitching and fielding)
+                    </p>
+                    <a href="#" class="button">
+                        Find out more
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/sports/water-skiing.jpg" width="300px" height="300px" alt="">
+                <div class="card-content">
+                    <h2>water-skiing</h2>
+                    <p>
+                        Water skiing is a surface water sport in which an individual is pulled behind a boat or a cable
+                        ski installation over a body of water, skimming the surface on two skis or one ski
+                    </p>
+                    <a href="#" class="button">
+                        Find out more
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/sports/swimming.jpg" width="300px" height="300px" alt="">
+                <div class="card-content">
+                    <h2>swimming</h2>
+                    <p>
+                        Swimming is an individual or team racing sport that requires the use of one's entire body to
+                        move through water.
+                    </p>
+                    <a href="#" class="button">
+                        Find out more
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="boxing">
+    </div>
+    <div id="gym">
+        <div class="gymtop">
+            <h1>Gym</h1>
+            <img src="images/Gym/istockphoto-1391410249-612x612.jpg" width="100%">
+            <h1>Type Of Gym</h1>
+            <p>In our club also have gym for people who want to do such as:</p>
+        </div>
+        <div class="gyms">
+            <div class="card">
+                <img src="images/Gym/treadmill.jpg" width="300px" height="300px" alt="">
+                <div class="card-content">
+                    <h2>Treadmill</h2>
+                    <p>
+                        A treadmill is a device generally used for walking, running, or climbing while staying in the
+                        same place. Treadmills were introduced before the development of powered machines to harness the
+                        power of animals or humans to do work,
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/Gym/bodybuilding.jpg" width="300px" height="300px" alt="">
+                <div class="card-content">
+                    <h2>bodybuilding</h2>
+                    <p>
+                        Bodybuilding is the use of progressive resistance exercise to build, control, and develop one's
+                        muscles via hypertrophy. An individual who engages in this activity is referred to as a
+                        bodybuilder
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/Gym/cardio.jpg" width="300px" height="300px" alt="">
+                <div class="card-content">
+                    <h2>Cardio</h2>
+                    <p>
+                        Cardio exercise, which is sometimes referred to as aerobic exercise, is any rhythmic activity
+                        that raises your heart rate into your target heart rate zone. This is the zone where you burn
+                        the most fat and calories. Some of the most common examples of cardio include walking, cycling,
+                        and swimming.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/Gym/core.jpg" width="300px" height="300px" alt="">
+                <div class="card-content">
+                    <h2>core</h2>
+                    <p>
+                        An independent training facility based in Coleraine, bringing a new style of strength and
+                        conditioning training to the North Coast. Regardless of what you want to get fit for, we will
+                        ensure that you make the best use of your time spent training!
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/Gym/crossfit.jpg" width="300px" height="300px" alt="">
+                <div class="card-content">
+                    <h2>crossfit</h2>
+                    <p>
+                        CrossFit is a branded fitness regimen that involves constantly varied functional movements
+                        performed at high intensity. The method was developed by Greg Glassman, who founded CrossFit
+                        with Lauren Jenai in 2000, with CrossFit its registered trade
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+
+                <img src="images/Gym/crosstrainer.jpg" width="300px" height="300px" alt="">
+                <div class="card-content">
+                    <h2>crosstrainer</h2>
+                    Cross trainers are obviously pieces of cardio equipment, therefore they provide many benefits to
+                    your cardiovascular system. The benefits are plentiful, including: increasing lung capacity (letting
+                    you workout for longer), making your heart stronger, and lowering your blood pressure.
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/Gym/Dumbell.jpg" width="300px" height="300px" alt="">
+                <div class="card-content">
+                    <h2>Dumbell</h2>
+                    <p>A dumbbell is a short bar with weights on either side which people use for physical exercise to
+                        strengthen their arm and shoulder muscles.Back in the day, bell ringing was a common form of
+                        exercise. To practice without creating noise (a “dumb” or silent bell), a weight was attached to
+                        a short bar, creating the first version of what we now call a dumbbell.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/Gym/yoga.jpg" width="500px" height="300px" alt="">
+                <div class="card-content">
+                    <h2>Yoga</h2>
+                    <p>Yoga is a practice that connects the body, breath, and mind. It uses physical postures, breathing
+                        exercises, and meditation to improve overall health. Yoga was developed as a spiritual practice
+                        thousands of years ago. Today, most Westerners who do yoga do it for exercise or to reduce
+                        stress.Nov</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>

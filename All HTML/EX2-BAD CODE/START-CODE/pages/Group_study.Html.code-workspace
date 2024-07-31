@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Group_study.Html",
+			"path": "../../../Group_study.Html"
+		},
+		{
+			"name": "EX2-BAD CODE",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "EX2-BAD CODE"
+	}
+}

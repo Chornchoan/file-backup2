@@ -1,0 +1,27 @@
+.btn {
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .btn-submit {
+    background: teal;
+    @extend .btn;
+  }
+  
+  .btn-reset {
+    background: orange;
+    @extend .btn;
+  }
+  
+  .btn-reload {
+    background: purple;
+    @extend .btn;
+  }
+  
+  .btn-login {
+    background: darkblue;
+    @extend .btn;
+  }

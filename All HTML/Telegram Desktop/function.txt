@@ -1,0 +1,65 @@
+——-Using Fuction——
+
+1.How to Remove number From a String in Python
+Input:yon12rady23him2
+output:yonradyhim
+
+note:you can you text[i].isnumeric() to check is number ot not.
+
+2.Count avoid Spaces in string length
+input:ab1 dc a
+output:6
+
+3.Uppercase Half String
+Input : abcd
+Output : abCD
+Explanation : Latter half of string is uppercased.
+Input : abc
+Output : abC
+Explanation : Latter half of string is uppercased.
+
+Note:you can use text[i].upper()
+
+4.Python program to capitalize the first and
+last character of each word in a string
+input:yen yon
+output:Yen yoN
+
+Note: you can use isupper()
+5.Python program to check if a string has at least one
+letter and one number.
+input: 1abc
+output: True
+input:ab
+output:False
+
+6.Python Program to Accept the Strings Which
+Contains all Vowels
+Input : geeksforgeeks
+Output : Not Accepted
+All vowels except 'a','i','u' are not present
+
+Input : ABeeIghiObhkUul
+Output : Accepted
+All vowels are present
+
+7.Python | Count the Number of matching characters
+in a pair of string
+Input : str1 = 'abcdef'
+        str2 = 'defghia'
+Output : 4
+(i.e. matching characters :- a, d, e, f)
+
+Input : str1 = 'aabcddekll12@'
+        str2 = 'bb22ll@55k'
+Output : 5
+(i.e. matching characters :- b, 1, 2, @, k)
+8.Write a Python program to print the index of a character in a string.
+Sample string: w3resource
+Expected output:
+Current character w position at 0
+Current character 3 position at 1
+Current character r position at 2
+- - - - - - - - - - - - - - - - - - - - - - - - -
+Current character c position at 8
+Current character e position at 9

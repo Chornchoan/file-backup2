@@ -1,0 +1,17 @@
+import tkinter as tk
+window=tk.Tk()
+window.geometry("800x600")
+window.title("creat box")
+frame = tk .Frame(window,width=700,height=500,)
+frame.pack()
+canvas= tk .Canvas(frame,width=700,height=510, bg="blue")
+canvas.pack()
+canvas.create_rectangle(10,350,200,400, fill="green")
+canvas.create_oval(110,300,50,350, fill="red")
+canvas.create_rectangle(210,300,350,250, fill="green")
+canvas.create_rectangle(350,400,500,350, fill="green")
+canvas.create_oval(260,250,300,200, fill="orange")
+canvas.create_rectangle(600,150,450,200, fill="green")
+canvas.create_oval(600,100,550,150, fill="black")
+
+window.mainloop()

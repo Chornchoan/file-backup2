@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    /* overflow-x: hidden; */
+}
+body {
+    background: #cea7;
+    display: grid;
+    grid-template-rows: 70px 550px 4748px 250px;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "footer";
+    
+}
+nav {
+    position: sticky;
+    top: 0;
+    background: #d97f11;
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-areas:
+        "navleft navright";
+    z-index: 3;
+}
+.navleft {
+    grid-area: navleft;
+}
+.navleft img {
+    width: 150px;
+    padding: 10px;
+
+}
+.navright {
+    grid-area: navright;
+    display: grid;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.navright ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+header {
+    position: relative;
+    grid-area: header;
+    background-image: url(https://media.licdn.com/dms/image/C4E1BAQEL9_UKiZEjcg/company-background_10000/0/1557127841108?e=1693400400&v=beta&t=GFJmxurfuGFkaZchAnioI6zRYlOJtBJIoQ6wUmCTnFo);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(125deg, rgba(228, 241, 53, 0.167), rgba(27, 35, 26, 0.578));
+}
+.text {
+    display: grid;
+    margin-top: 280px;  
+    z-index: 1;
+    color: white;
+}
+.text p {
+    margin-bottom: 140px;
+}
+main {
+    grid-area: main;
+}
+.vlu h2 {
+    padding: 10px;
+    text-decoration: underline;
+
+}
+.pnvalue {
+    height: 40vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.one {
+    height: 40vh;
+    background: #b3d6ec;
+    border: 1px solid black;
+    background: linear-gradient(125deg, rgba(214, 61, 216, 0.443), rgba(24, 222, 43, 0.301));
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    gap: 20px;
+
+}
+.one img {
+    width: 80px;
+}
+.one:hover {
+    background: #2985d0;
+}
+.cantten {
+    margin-top: 30px;
+}
+.manue {
+    height: 40vh;
+    position: relative;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.ctt {
+    padding: 10px;
+    text-decoration: underline;
+}
+.pictur {
+    height: 40vh;
+    background: #b3d6ec;
+    border: 1px solid black;
+    background: linear-gradient(125deg, rgba(56, 67, 55, 0.397), rgba(212, 230, 16, 0.301));
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    gap: 20px;
+}
+.pictur img {
+    width: 200px;
+    padding: 10px;
+    border-radius: 100px;
+}
+.picturt img{
+    width: 200px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 100px;
+}
+.picturt{
+    height: 40vh;
+    background: #b3d6ec;
+    border: 1px solid black;
+    background: linear-gradient(125deg, rgba(56, 67, 55, 0.397), rgba(212, 230, 16, 0.301));
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    gap: 20px;
+}
+.sl {
+    height: 30vh;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+table {
+    display: grid;
+    border-collapse: collapse;
+    justify-content: center;
+}
+thead tr th {
+    width: 150px;
+    height: 50px;
+    background: #1759dc;
+    border: 1px solid #000;
+    color: rgb(249, 249, 249);
+}
+tbody tr td {
+    width: 150px;
+    height: 30px;
+    border: 1px solid #000;
+}
+.bgsport {
+    position: relative;
+    background-image: url(https://www.kreedon.com/wp-content/uploads/2019/04/sports-jobs.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    display: grid;
+    color: white;
+    margin-top: 20px;
+    padding: 10px
+}
+.bgsport h2 {
+    margin-top: 120px;
+}
+.bgsport p {
+    margin-bottom: 200px;
+}
+.sp{
+    padding: 10px;
+    text-decoration: underline;
+    text-align: center;
+}
+.sporttype{
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+.sport {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);   
+}
+.sport img {
+    width: 300px;
+}
+.football,.ruby,.basketball,.bicycle,.badminton,.volleyball{
+    background: #beacac;
+     height: 60vh;
+     margin: 20px;
+}
+.football:hover,
+.ruby:hover,
+.basketball:hover,
+.bicycle:hover,
+.badminton:hover,
+.volleyball:hover{
+    background: #42e4ea;
+}
+.football img,.bicycle img,.volleyball img,.badminton img,.basketball img,.ruby img{
+    width: 380px;
+    height: 35vh;
+}
+.arobicSection{
+    display: grid;
+    text-align: center;
+    grid-template-columns:repeat(2,6fr) ;
+}
+.arobic {
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+.arb{
+    background: #3edff1;
+    margin: 10px;
+}
+.arb img{
+    width: 600px;
+}
+.contact{
+    background-image: url(https://www.passerellesnumeriques.org/wp-content/uploads/2016/03/DSC_2053.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;  
+    grid-template-columns:repeat(2,1fr);
+    margin-top: 10px;
+    padding: 10px;
+}
+.jone{
+    color: white;
+    margin-top: 70px;
+}
+.grupinput{
+     background: #17c3dacf;
+     height: 80vh;
+     width: 80%;
+     display: grid;
+     align-items: center;
+     border-radius: 10px;
+     margin-left: 50px;
+
+}
+.username input{    
+    width: 42.40%;
+    margin-left: 8px;
+    padding: 10px; 
+}
+.email  input,.userpassword input{
+  width: 92%;
+ margin-left: 8px;
+ padding: 10px;
+}
+.submit button{
+    width: 97%;
+    margin-left: 8px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 100px;
+    border: none;
+}
+.submit :hover{
+    background: #25eac3;
+}
+.message input{
+    width: 92%;
+    height: 20vh;
+    margin-left: 8px;
+    padding: 10px;
+}
+footer {
+    grid-area: footer;
+    background: #11ccd9f3;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 20px;
+}
+.logopn img{
+    grid-column: 1/3;
+}
+.log{
+    margin-bottom: 10px;
+}
+.valuePN h3,.Oursocialmaxresdia h3,.OurMajor h3,.ourDepartment h3{
+    color: #0319e0;
+    margin-bottom: 10px;
+}
+.valuePN,.OurMajor,.ourDepartment{
+    margin-left: 60px;
+}
+.icons1 span{
+    margin-left: 10px;
+}
+.icons1 img{
+    width: 25px;
+}
+a{
+    text-decoration: none;
+}
+@media(max-width:1024px){
+    body{
+        width: 100%;
+    }
+    .sp{
+        margin-top: 40px;
+    }
+    iframe{
+        height: 230vh;
+    }
+    nav {
+        position: sticky;
+        top: 0;
+        grid-area: nav;
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-areas:
+            "navleft navright";
+        z-index: 2;
+    }
+   
+} 
+@media(max-width: 724px){
+    iframe{
+        height: 188vh;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    
+}

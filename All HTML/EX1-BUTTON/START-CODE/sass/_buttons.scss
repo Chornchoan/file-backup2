@@ -1,0 +1,25 @@
+@import "./mixin.scss";
+.btn-primary{
+    @include allbtn;
+    background: #0091ff;
+}
+.btn-secondary{
+    @include allbtn;
+    background: #a8a9aa;
+}
+.btn-warning{
+    @include allbtn;
+    background: #ffbb00;
+}
+.btn-success{
+    @include allbtn;
+    background: #0fc975;
+}
+.btn-dark{
+    @include allbtn;
+    background: #030303;
+}
+.btn-danger{
+    @include allbtn;
+    background: red;
+}

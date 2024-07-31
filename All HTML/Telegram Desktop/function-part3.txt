@@ -1,0 +1,37 @@
+
+-----------------------------Part1-----------------------------
+Exercise1
+Create the function allow the user enter text and word to remove
+-function: reomoveWord(text,word)
+-param: text and word
+----xample----
+Enter a text:hello yon! how are you yon?
+Enter word to remove:yon
+Text after removing word of yon:hello ! how are you ?
+
+Exercise2
+Note:You need to use or apply the function reomoveWord()
+----xample----
+Enter a text:hello yon! how are you yon?
+Enter word to remove:yon
+Text after removing word of yon:hello ! how are you ?
+Do you want to continue(Y/N)? (If enter 'Y' do again,else stop the process)
+
+
+-----------------------------Part2-----------------------------
+Exercise1
+Create the function allow the user enter text and word to count
+-function: countWord(text,word)
+-param: text and word
+----xample----
+Enter a text:hello yon! how are you yon?
+Enter word to remove:yon
+Occurrences of word: 2
+
+Exercise2
+Note:You need to use or apply the function countWord()
+----xample----
+Enter a text:hello yon! how are you yon?
+Enter word to remove:yon
+Occurrences of word: 2
+Do you want to continue(Y/N)? (If enter 'Y' do again,else stop the process)
